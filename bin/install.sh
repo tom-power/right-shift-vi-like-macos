@@ -38,3 +38,5 @@ fi
 
 cp -R ./src/hammerspoon ~/.hammerspoon
 cp ./src/karabiner/right-shift-vi-like.json ~/.config/karabiner/assets/complex_modifications/right-shift-vi-like.json
+
+echo "All done, remember to reload config in hammerspoon and install the configurations in karabiner-elements prefences"
