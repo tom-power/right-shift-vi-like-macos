@@ -101,19 +101,35 @@ keymap('space', hyper, 'tab', '')
 keymap('space', hyper_shift, 'tab', 'shift')
 keymap('r', hyper, 'f6', 'shift')
 
+-- ------------------
+-- mirror unused keys
+-- ------------------
+keymap('4', hyper, '4', 'shift', 0, true)
+keymap('5', hyper, '5', 'shift', 0, true)
+keymap('6', hyper, '6', 'shift', 0, true)
+keymap('7', hyper, '7', 'shift', 0, true)
+keymap('8', hyper, '8', 'shift', 0, true)
+keymap('9', hyper, '9', 'shift', 0, true)
+keymap('0', hyper, '0', 'shift', 0, true)
+keymap("\\", hyper, "\\", 'shift', 0, true)
+keymap("'", hyper, "'", 'shift', 0, true)
+keymap("-", hyper, '-', 'shift', 0, true)
+keymap("=", hyper, '=', 'shift', 0, true)
+keymap("[", hyper, "[", 'shift', 0, true)
+keymap("]", hyper, "]", 'shift', 0, true)
+keymap(",", hyper, ",", 'shift', 0, true)
+keymap("/", hyper, "/", 'shift', 0, true)
 
+-- ------------------
+-- strings
+-- ------------------
 local function keyToString(sourceKey, sourceMod, string)
     hs.hotkey.bind(sourceMod, sourceKey, function()
         hs.eventtap.keyStrokes(string)
     end)
 end
 
+keyToString(".", hyper, "->")
+keyToString("3", hyper, "#")
 keyToString("q", hyper, "'")
 keyToString("2", hyper, '"')
-keyToString('"', hyper, '"')
-keyToString("3", hyper, '#')
-keyToString("9", hyper, "(")
-keyToString("0", hyper, ")")
-keyToString("[", hyper, "{")
-keyToString("]", hyper, "}")
-keyToString(".", hyper, "->")
