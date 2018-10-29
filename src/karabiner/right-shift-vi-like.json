@@ -201,7 +201,7 @@
       ]
     },
     {
-      "description": "IntelliJ go back (hyper+cmd+h to cmd+[)",
+      "description": "IntelliJ go back (hyper+cmd+alt+h to cmd+[)",
       "manipulators": [
         {
           "from": {
@@ -211,7 +211,8 @@
                 "right_control",
                 "right_command",
                 "right_option",
-                "left_command"
+                "left_command",
+                "left_option"
               ]
             }
           },
@@ -228,7 +229,7 @@
       ]
     },
     {
-      "description": "IntelliJ go forward (hyper+cmd+l to cmd+])",
+      "description": "IntelliJ go forward (hyper+cmd+alt+l to cmd+])",
       "manipulators": [
         {
           "from": {
@@ -238,7 +239,8 @@
                 "right_control",
                 "right_command",
                 "right_option",
-                "left_command"
+                "left_command",
+                "left_option"
               ]
             }
           },
