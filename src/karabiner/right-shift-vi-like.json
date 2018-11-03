@@ -2,7 +2,7 @@
   "title": "right shift vi like",
   "rules": [
     {
-      "description": "Hyper (right+shift to hyper)",
+      "description": "Right shift to hyper (right_shift to hyper)",
       "manipulators": [
         {
           "from": {
@@ -41,6 +41,31 @@
           "to": [
             {
               "key_code": "left_command"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Capslock and left control to hyper (caps_lock+left_control to hyper)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command",
+              "modifiers": [
+                "right_control",
+                "right_option"
+              ]
             }
           ],
           "type": "basic"
