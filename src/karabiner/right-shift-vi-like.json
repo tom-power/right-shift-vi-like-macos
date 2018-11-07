@@ -27,7 +27,7 @@
       ]
     },
     {
-      "description": "Capslock to left command (caps_lock to left_command)",
+      "description": "Capslock to right command (caps_lock to right_command)",
       "manipulators": [
         {
           "from": {
@@ -40,7 +40,7 @@
           },
           "to": [
             {
-              "key_code": "left_command"
+              "key_code": "right_command"
             }
           ],
           "type": "basic"
@@ -48,39 +48,14 @@
       ]
     },
     {
-      "description": "Capslock and left control to hyper (caps_lock+left_control to hyper)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "left_control",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_command",
-              "modifiers": [
-                "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Left command and space to escape (left_command+space to escape)",
+      "description": "Right command and space to escape (right_command+space to escape)",
       "manipulators": [
         {
           "from": {
             "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "left_command"
+                "right_command"
               ]
             }
           },
@@ -94,14 +69,14 @@
       ]
     },
     {
-      "description": "Left command and return to spotlight (left_command+return to left_command+spacebar)",
+      "description": "Right command and return to spotlight (right_command+return to left_command+spacebar)",
       "manipulators": [
         {
           "from": {
             "key_code": "return_or_enter",
             "modifiers": {
               "mandatory": [
-                "left_command"
+                "right_command"
               ]
             }
           },
