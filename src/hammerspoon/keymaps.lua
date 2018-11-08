@@ -118,6 +118,7 @@ keymap("=", hyper, '=', 'shift', 0, true)
 keymap("[", hyper, "[", 'shift', 0, true)
 keymap("]", hyper, "]", 'shift', 0, true)
 keymap(",", hyper, ",", 'shift', 0, true)
+keymap(".", hyper, ".", 'shift', 0, true)
 keymap("/", hyper, "/", 'shift', 0, true)
 
 -- ------------------
@@ -129,7 +130,8 @@ local function keyToString(sourceKey, sourceMod, string)
     end)
 end
 
-keyToString(".", hyper, "->")
 keyToString("3", hyper, "#")
 keyToString("q", hyper, "'")
 keyToString("2", hyper, '"')
+keyToString("-", hyper_shift, "->")
+keyToString("=", hyper_shift, "=>")
