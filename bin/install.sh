@@ -36,9 +36,13 @@ if [ ! -d /Applications/Hammerspoon.app ]; then
   cask_install hammerspoon
 fi
 
-cp -R ./src/hammerspoon ~/.hammerspoon
+if [ ! -d ~/.hammerspoon ]; then
+    mkdir ~/.hammerspoon/
+fi
 
-if [ ! -d /Applications/Hammerspoon.app ]; then
+cp -rf ./src/hammerspoon/* ~/.hammerspoon
+
+if [ ! -d ~/.config/karabiner/assets/complex_modifications/ ]; then
     mkdir -p ~/.config/karabiner/assets/complex_modifications/
 fi
 
