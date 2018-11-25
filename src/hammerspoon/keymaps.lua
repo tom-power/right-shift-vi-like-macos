@@ -51,29 +51,29 @@ local hyper_shift = {'cmd', 'alt', 'control', 'shift'}
 -- ------------------
 -- move
 -- ------------------
-local arrows = {
-    h = 'left',
-    j = 'down',
-    k = 'up',
-    l = 'right'
-}
-for k, v in pairs(arrows) do
-    keymap(k, hyper, v, '')
-    keymap(k, hyper_shift, v, 'shift')
-end
+--local arrows = {
+--    h = 'left',
+--    j = 'down',
+--    k = 'up',
+--    l = 'right'
+--}
+--for k, v in pairs(arrows) do
+--    keymap(k, hyper, v, '')
+--    keymap(k, hyper_shift, v, 'shift')
+--end
 
-keymap('b', hyper, 'left', 'alt')
-keymap('b', hyper_shift, 'left', 'alt+shift')
-keymap('w', hyper, 'right', 'alt')
-keymap('w', hyper_shift, 'right', 'alt+shift')
-keymap('a', hyper, 'left', 'cmd')
-keymap('a', hyper_shift, 'left', 'cmd+shift')
-keymap('e', hyper, 'right', 'cmd')
-keymap('e', hyper_shift, 'right', 'cmd+shift')
-keymap('p', hyper, 'pageup', '')
-keymap('p', hyper_shift, 'pageup', 'shift')
-keymap(';', hyper, 'pagedown', '')
-keymap(';', hyper_shift, 'pagedown', 'shift')
+--keymap('b', hyper, 'left', 'alt')
+--keymap('b', hyper_shift, 'left', 'alt+shift')
+--keymap('w', hyper, 'right', 'alt')
+--keymap('w', hyper_shift, 'right', 'alt+shift')
+--keymap('a', hyper, 'left', 'cmd')
+--keymap('a', hyper_shift, 'left', 'cmd+shift')
+--keymap('e', hyper, 'right', 'cmd')
+--keymap('e', hyper_shift, 'right', 'cmd+shift')
+--keymap('p', hyper, 'pageup', '')
+--keymap('p', hyper_shift, 'pageup', 'shift')
+--keymap(';', hyper, 'pagedown', '')
+--keymap(';', hyper_shift, 'pagedown', 'shift')
 
 -- ------------------
 -- command mapping
