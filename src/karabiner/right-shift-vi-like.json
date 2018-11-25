@@ -2,31 +2,6 @@
   "title": "right shift vi like",
   "rules": [
     {
-      "description": "Right shift to hyper (right_shift to hyper)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "right_shift",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_command",
-              "modifiers": [
-                "right_control",
-                "right_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
       "description": "Capslock to right command (caps_lock to right_command)",
       "manipulators": [
         {
@@ -93,16 +68,14 @@
       ]
     },
     {
-      "description": "Go to space to left (hyper+control+h to ctrl+left)",
+      "description": "Go to space to left (right_shift+control+h to ctrl+left)",
       "manipulators": [
         {
           "from": {
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
+                "right_shift",
                 "left_control"
               ]
             }
@@ -120,16 +93,14 @@
       ]
     },
     {
-      "description": "Go to space to right (hyper+control+l to control+right)",
+      "description": "Go to space to right (right_shift+control+l to control+right)",
       "manipulators": [
         {
           "from": {
             "key_code": "l",
             "modifiers": {
               "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
+                "right_shift",
                 "left_control"
               ]
             }
@@ -147,286 +118,14 @@
       ]
     },
     {
-      "description": "Command right (hyper+cmd+l to cmd+right)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Command down (hyper+cmd+j to cmd+down)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Command left (hyper+cmd+h to cmd+left)",
+      "description": "IntelliJ go back (right_shift+cmd+alt+h to cmd+[)",
       "manipulators": [
         {
           "from": {
             "key_code": "h",
             "modifiers": {
               "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Command up (hyper+cmd+k to cmd+up)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Option right (hyper+option+l to option+right)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Option down (hyper+option+j to option+down)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Option left (hyper+option+h to option+left)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Option up (hyper+option+k to option+up)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Option home (hyper+option+a to option+home)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "a",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "home",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Option end (hyper+option+e to option+end)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "end",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "IntelliJ go back (hyper+cmd+alt+h to cmd+[)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
+                "right_shift",
                 "left_command",
                 "left_option"
               ]
@@ -445,17 +144,14 @@
       ]
     },
     {
-      "description": "IntelliJ go forward (hyper+cmd+alt+l to cmd+])",
+      "description": "IntelliJ go forward (right_shift+cmd+alt+l to cmd+])",
       "manipulators": [
         {
           "from": {
             "key_code": "l",
             "modifiers": {
               "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option",
-                "left_command",
+                "right_shift",
                 "left_option"
               ]
             }
@@ -473,16 +169,14 @@
       ]
     },
     {
-      "description": "IntelliJ go to tab to left (hyper+u to cmd+shift+[)",
+      "description": "IntelliJ go to tab to left (right_shift+u to cmd+shift+[)",
       "manipulators": [
         {
           "from": {
             "key_code": "u",
             "modifiers": {
               "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option"
+                "right_shift"
               ]
             }
           },
@@ -500,16 +194,14 @@
       ]
     },
     {
-      "description": "IntelliJ go to tab to right (hyper+o to cmd+shift+])",
+      "description": "IntelliJ go to tab to right (right_shift+o to cmd+shift+])",
       "manipulators": [
         {
           "from": {
             "key_code": "o",
             "modifiers": {
               "mandatory": [
-                "right_control",
-                "right_command",
-                "right_option"
+                "right_shift"
               ]
             }
           },
