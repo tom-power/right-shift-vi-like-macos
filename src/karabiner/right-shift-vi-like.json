@@ -879,7 +879,7 @@
       "manipulators": [
         {
           "from": {
-            "key_code": "space",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
                 "right_shift"
@@ -900,7 +900,7 @@
       "manipulators": [
         {
           "from": {
-            "key_code": "space",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
                 "right_shift",
