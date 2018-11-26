@@ -72,6 +72,31 @@
       ]
     },
     {
+      "description": "Right command (right_shift+left_command+l to cmd+right)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Right command shift (right_shift+left_shift+e to cmd+shift+right)",
       "manipulators": [
         {
@@ -282,6 +307,31 @@
               "key_code": "left_arrow",
               "modifiers": [
                 "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Left command (right_shift+left_command+h to cmd+left)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_command"
               ]
             }
           ],
