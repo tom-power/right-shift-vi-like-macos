@@ -32,20 +32,10 @@ if [ ! -d /Applications/Karabiner-Elements.app ]; then
   cask_install karabiner-elements
 fi
 
-if [ ! -d /Applications/Hammerspoon.app ]; then
-  cask_install hammerspoon
-fi
-
-if [ ! -d ~/.hammerspoon ]; then
-    mkdir ~/.hammerspoon/
-fi
-
-cp -rf ./src/hammerspoon/* ~/.hammerspoon
-
 if [ ! -d ~/.config/karabiner/assets/complex_modifications/ ]; then
     mkdir -p ~/.config/karabiner/assets/complex_modifications/
 fi
 
 cp ./src/karabiner/right-shift-vi-like.json ~/.config/karabiner/assets/complex_modifications/right-shift-vi-like.json
 
-echo "All done, remember to reload config in hammerspoon and install the configurations in karabiner-elements preferences"
+echo "All done, remember to install the configurations in karabiner-elements preferences"

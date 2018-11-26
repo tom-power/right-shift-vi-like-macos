@@ -1,6 +1,6 @@
 # Vi like key bindings for MacOS using right shift 
 
-[Karabiner elements](https://github.com/tekezo/Karabiner-Elements) and [Hammerspoon](http://www.hammerspoon.org/) configuration that provide vi like keymappings for macOS. 
+[Karabiner elements](https://github.com/tekezo/Karabiner-Elements) configuration that provide vi like keymappings for macOS. 
 
 Works with macOS Seirra defaults using right shift and capslock only as modifiers.
 
@@ -57,15 +57,10 @@ alternatively complete the following:
 # Install Karabiner elements.
 brew cask install karabiner-elements
 
-# Install hammerspoon
-brew cask install hammerspoon
-
 # Copy the configuration from the root of the project
-cp -R ./src/hammerspoon ~/.hammerspoon
 cp ./src/karabiner/right-shift-vi-like.json ~/.config/karabiner/assets/complex_modifications/right-shift-vi-like.json 
 ```
 
 Finally the configurations will need to be loaded:
  
- - Hammerspoon -> "Reload configuration" from preferences or menu
  - Karabiner elements -> preferences then "complex configuration" -> "Add rule" -> "right shift vi like"
