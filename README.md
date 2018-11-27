@@ -6,14 +6,15 @@ Works with macOS Seirra defaults using right shift and capslock only as modifier
 
 ### Mappings
 
-##### Movement (left shift for select)
+##### Movement/navigation
 - h/j/k/l -> arrow keys
 - w/b -> word forward/back
 - a/e -> home/end
 - ;/p -> pageup/down
 - u/o -> cmd+shift+[/] (tab switch)
+- +command/option/left shift -> as above with additional modifiers 
 
-##### Command mapping
+##### Command
 - a/s/c/v/x/z repeated with command
 - h/j/k/l -> arrow keys with command (for navigation in file managers)
 - y -> cmd+w (close tab)
@@ -32,7 +33,8 @@ Works with macOS Seirra defaults using right shift and capslock only as modifier
 - 3 -> hash
 - 9/0 -> (/)
 - [/] -> [/] (shift for {/})
-- . -> "->"
+- -+left shift -> "->"
+- =+left shift -> "=>"
 - r -> f6+shift (rename)
 
 ##### Other
@@ -42,7 +44,7 @@ Works with macOS Seirra defaults using right shift and capslock only as modifier
 
 ### Installation
 
-Clone/download then run the intallation script in the root of the project:
+Clone/download then run the installation script in the root of the project:
 
 ```sh
 ./bin/install.sh
