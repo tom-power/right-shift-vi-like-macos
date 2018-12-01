@@ -1228,6 +1228,33 @@
       ]
     },
     {
+      "description": "Underscore (left_shift+space to _)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign"
+            },
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Right command and return to spotlight (right_command+return to left_command+spacebar)",
       "manipulators": [
         {
