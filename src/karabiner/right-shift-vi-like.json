@@ -1371,6 +1371,37 @@
           "type": "basic"
         }
       ]
+    },
+    {
+      "description": "Select word (right_shift+n to shift+option+left then shift+option+right)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_option"
+              ]
+            },
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_option",
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
     }
   ]
 }
