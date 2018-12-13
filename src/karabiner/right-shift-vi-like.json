@@ -1110,7 +1110,7 @@
           },
           "to": [
             {
-              "key_code": "quote"              
+              "key_code": "quote"
             }
           ],
           "type": "basic"
