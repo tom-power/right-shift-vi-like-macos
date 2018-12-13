@@ -1025,6 +1025,30 @@
       ]
     },
     {
+      "description": "Underscore (left_shift+space to _)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Rename (right_shift+r to shift+f6)",
       "manipulators": [
         {
