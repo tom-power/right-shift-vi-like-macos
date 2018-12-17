@@ -919,6 +919,30 @@
       ]
     },
     {
+      "description": "Info (right_shift+i to i+command)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "New tab (right_shift+t to t+command)",
       "manipulators": [
         {
