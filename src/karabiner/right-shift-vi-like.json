@@ -632,6 +632,27 @@
       ]
     },
     {
+      "description": "Left command and space to escape (left_command+space to escape)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Page up (right_shift+p to page_up)",
       "manipulators": [
         {
