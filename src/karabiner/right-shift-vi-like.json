@@ -1354,7 +1354,7 @@
       ]
     },
     {
-      "description": "IntelliJ go back (right_shift+cmd+alt+h to cmd+[)",
+      "description": "IntelliJ go back (right_shift+cmd+option+h to cmd+[)",
       "manipulators": [
         {
           "from": {
@@ -1380,7 +1380,7 @@
       ]
     },
     {
-      "description": "IntelliJ go forward (right_shift+cmd+alt+l to cmd+])",
+      "description": "IntelliJ go forward (right_shift+cmd+option+l to cmd+])",
       "manipulators": [
         {
           "from": {
