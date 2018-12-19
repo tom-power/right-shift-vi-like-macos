@@ -991,6 +991,31 @@
       ]
     },
     {
+      "description": "Return option (right_shift+m+option to return+option)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Delete (right_shift+f to delete)",
       "manipulators": [
         {
