@@ -296,6 +296,31 @@
       ]
     },
     {
+      "description": "Down control (right_shift+control+j to control+down)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Down option shift (right_shift+option+left_shift+j to option+shift+down)",
       "manipulators": [
         {
@@ -609,6 +634,31 @@
               "key_code": "up_arrow",
               "modifiers": [
                 "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Up control (right_shift+control+k to control+up)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "left_control"
               ]
             }
           ],
