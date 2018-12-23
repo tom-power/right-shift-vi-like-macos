@@ -1292,7 +1292,35 @@
       ]
     },
     {
-      "description": "Double quote (right_shift+q to double quote)",
+      "description": "Single quote closed (right_shift+left_shift+q to closed single quotes)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote"
+            },
+            {
+              "key_code": "quote"
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Double quote (right_shift+2 to double quote)",
       "manipulators": [
         {
           "from": {
@@ -1309,6 +1337,142 @@
               "modifiers": [
                 "left_shift"
               ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Double quote closed (right_shift+left_shift+2 to closed double quotes)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "quote",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Angle bracket closed (right_shift+left_shift+, to closed angle brackets)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": ",",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": ",",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": ".",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Parentheses closed (right_shift+left_shift+9 to closed parentheses)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "9",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "9",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "0",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Braces closed (right_shift+left_shift+[ to closed braces)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "[",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "[",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "]",
+              "modifiers": [
+                "left_shift"
+              ]
+            },
+            {
+              "key_code": "left_arrow"
             }
           ],
           "type": "basic"
