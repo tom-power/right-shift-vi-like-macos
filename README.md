@@ -1,12 +1,10 @@
 # Vi like key bindings for MacOS using right shift
 
-[Karabiner elements](https://github.com/tekezo/Karabiner-Elements) configuration for vi like keymappings for macOS.
-
-Works with macOS Seirra defaults using right shift and capslock only as modifiers.
+[Karabiner elements](https://github.com/tekezo/Karabiner-Elements) configuration for vi like keymappings on macOS Seirra.
 
 ### Mappings
 
-##### With right shift pressed..
+all with right shift pressed..
 
 ##### Movement/navigation
 - h/j/k/l -> mapped to arrow keys
