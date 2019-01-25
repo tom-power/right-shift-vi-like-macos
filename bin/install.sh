@@ -36,6 +36,6 @@ if [ ! -d ~/.config/karabiner/assets/complex_modifications/ ]; then
     mkdir -p ~/.config/karabiner/assets/complex_modifications/
 fi
 
-cp ./src/karabiner/right-shift-vi-like.json ~/.config/karabiner/assets/complex_modifications/right-shift-vi-like.json
+cp ./src/karabiner/right_shift_vi_like.json ~/.config/karabiner/assets/complex_modifications/right_shift_vi_like.json
 
 echo "All done, remember to install the configurations in karabiner-elements preferences"
