@@ -6,41 +6,38 @@ Works with macOS Seirra defaults using right shift and capslock only as modifier
 
 ### Mappings
 
+##### With right shift pressed..
+
 ##### Movement/navigation
-- h/j/k/l -> arrow keys
+- h/j/k/l -> mapped to arrow keys
 - w/b -> word forward/back
 - a/e -> home/end
 - ;/p -> pageup/down
 - u/o -> cmd+shift+[/] (tab switch)
-- +command/option/left shift -> as above with additional modifiers
-
-##### Command
-- a/s/c/v/x/z repeated with command
-- h/j/k/l -> arrow keys with command (for navigation in file managers)
-- y -> cmd+w (close tab)
-- g -> cmd+l (address bar)
-- h/l -> cmd+[/] (history back/forward)
-
-##### Control mapping
-- h/l -> to arrow+control (for space switching)
+- +command/option/left shift/control -> apply to above
 
 ##### Editing
+- s/c/v/x/z/t sent with command modifier
 - m -> return
 - f/d -> delete/backspace
 - space -> tab
+- space+left shift -> shift tab
 - q -> single quote
+- q+left shift -> closed single quote 
 - 2 -> double quote
+- 2+left shift -> closed double quote
 - 3 -> hash
-- 9/0 -> (/)
-- [/] -> [/] (shift for {/})
-- -+left shift -> "->"
-- =+left shift -> "=>"
+- . -> "->"
+- .+left shift -> "=>"
 - r -> f6+shift (rename)
 
 ##### Other
 - caplocks -> command
 - caplocks+enter -> command+space (spotlight default)
 - caplocks+space -> escape
+- y -> cmd+w (close tab)
+- g -> cmd+l (address bar)
+- h/l -> cmd+[/] (history back/forward)
 
 ### Installation
 
