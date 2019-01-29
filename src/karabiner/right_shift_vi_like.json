@@ -1379,14 +1379,15 @@
       ]
     },
     {
-      "description": "Thin arrow (right_shift+. to ->)",
+      "description": "Thin arrow (right_shift+left_shift+- to ->)",
       "manipulators": [
         {
           "from": {
-            "key_code": "period",
+            "key_code": "hyphen",
             "modifiers": {
               "mandatory": [
-                "right_shift"
+                "right_shift",
+                "left_shift"
               ]
             }
           },
@@ -1406,11 +1407,11 @@
       ]
     },
     {
-      "description": "Fat arrow (right_shift+left_shift+period to =>)",
+      "description": "Fat arrow (right_shift+left_shift+= to =>)",
       "manipulators": [
         {
           "from": {
-            "key_code": "period",
+            "key_code": "equal_sign",
             "modifiers": {
               "mandatory": [
                 "right_shift",

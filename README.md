@@ -25,8 +25,8 @@ all with right shift pressed..
 - 2 -> double quote
 - 2+left shift -> closed double quote
 - 3 -> hash
-- . -> "->"
-- .+left shift -> "=>"
+- -+left shift -> "->"
+- =+left shift -> "=>"
 - r -> f6+shift (rename)
 
 ##### Other
