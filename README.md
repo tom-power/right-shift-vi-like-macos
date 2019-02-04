@@ -45,6 +45,4 @@ Alternatively install [Karabiner elements](https://pqrs.org/osx/karabiner/) then
 
 For both methods the rules will need to be loaded in the Karabiner elements UI:
 
- ```
- "Preferences" -> "Complex Modifications" -> "Add rule" -> "right shift vi like" -> "Enable all"
- ``
+```"Preferences" -> "Complex Modifications" -> "Add rule" -> "right shift vi like" -> "Enable all"```
