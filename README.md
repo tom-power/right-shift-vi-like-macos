@@ -39,25 +39,12 @@ all with right shift pressed..
 
 ### Installation
 
-Clone/download then run the installation script in the root of the project:
+Clone this repository then run `sh bin/install.sh` in the root of the project.
 
-```sh
-bin/install.sh
-```
+Alternatively install [Karabiner elements](https://pqrs.org/osx/karabiner/) then import the [rules](https://pqrs.org/osx/karabiner/complex_modifications/#right_shift_vi_like) from it's site. 
 
-alternatively complete the following:
+For both methods the rules will need to be loaded in the Karabiner elements UI:
 
-```sh
-# Install Homebrew (see https://brew.sh).
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Install Karabiner elements.
-brew cask install karabiner-elements
-
-# Copy the configuration from the root of the project
-cp ./src/karabiner/right-shift-vi-like.json ~/.config/karabiner/assets/complex_modifications/right-shift-vi-like.json
-```
-
-Finally the configurations will need to be loaded:
-
- - Karabiner elements -> preferences then "complex configuration" -> "Add rule" -> "right shift vi like"
+ ```
+ "Preferences" -> "Complex Modifications" -> "Add rule" -> "right shift vi like" -> "Enable all"
+ ``
