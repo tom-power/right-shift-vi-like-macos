@@ -744,27 +744,6 @@
       ]
     },
     {
-      "description": "Capslock to right command (caps_lock to right_command)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "caps_lock",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_command"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
       "description": "Right command and space to escape (right_command+space to escape)",
       "manipulators": [
         {
@@ -779,6 +758,31 @@
           "to": [
             {
               "key_code": "escape"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Right command, shift and space to shift escape (right_command+right_shift+space to shift+escape)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape",
+              "modifiers": [
+                "right_shift"
+              ]
             }
           ],
           "type": "basic"
