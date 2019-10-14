@@ -765,7 +765,7 @@
       ]
     },
     {
-      "description": "Right command, shift and space to shift escape (right_command+right_shift+space to shift+escape)",
+      "description": "Right command, shift and space to shift escape (right_command+left_shift+space to shift+escape)",
       "manipulators": [
         {
           "from": {
@@ -773,7 +773,7 @@
             "modifiers": {
               "mandatory": [
                 "right_command",
-                "right_shift"
+                "left_shift"
               ]
             }
           },
@@ -781,7 +781,7 @@
             {
               "key_code": "escape",
               "modifiers": [
-                "right_shift"
+                "left_shift"
               ]
             }
           ],
@@ -804,6 +804,31 @@
           "to": [
             {
               "key_code": "escape"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Left command, shift and space to shift escape (left_command+left_shift+space to shift+escape)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape",
+              "modifiers": [
+                "left_shift"
+              ]
             }
           ],
           "type": "basic"
