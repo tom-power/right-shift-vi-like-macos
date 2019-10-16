@@ -419,6 +419,27 @@
       ]
     },
     {
+      "description": "Capslock to right command (caps_lock to right_command)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Left command (right_shift+left_command+h to cmd+left)",
       "manipulators": [
         {

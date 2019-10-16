@@ -36,6 +36,8 @@ all with right shift pressed..
 - y -> cmd+w (close tab)
 - g -> cmd+l (address bar)
 - h/l -> cmd+[/] (history back/forward)
+- 9/[ -> closed round/curly brackets
+- -/= -> ->/=>
 
 ### Installation
 
