@@ -20,13 +20,11 @@ all with right shift pressed..
 - f/d -> delete/backspace
 - space -> tab
 - space+left shift -> shift tab
-- q -> single quote
-- q+left shift -> closed single quote 
-- 2 -> double quote
-- 2+left shift -> closed double quote
+- q/2 -> single/double quotes
+- q/2 + left shift -> closed single/double quotes 
+- 9/[ -> closed round/curly brackets
 - 3 -> hash
-- - -> "->"
-- = -> "=>"
+- -/= -> ->/=>
 - r -> f6+shift (rename)
 
 ##### Other
@@ -36,8 +34,6 @@ all with right shift pressed..
 - y -> cmd+w (close tab)
 - g -> cmd+l (address bar)
 - h/l -> cmd+[/] (history back/forward)
-- 9/[ -> closed round/curly brackets
-- -/= -> ->/=>
 
 ### Installation
 
