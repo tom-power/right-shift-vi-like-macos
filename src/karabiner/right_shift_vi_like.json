@@ -48,6 +48,58 @@
       ]
     },
     {
+      "description": "Right command (right_shift+left_command+h to cmd+right)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Right command option (right_shift+left_command+left_option+h to cmd+option+right)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_command",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_command",
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Right fn/end (right_shift+e to cmd+right)",
       "manipulators": [
         {
