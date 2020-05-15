@@ -794,6 +794,33 @@
       ]
     },
     {
+      "description": "Up control option (control+option+left_shift+k to control+option+up)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_control",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": [
+                "left_option",
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Right command and space to escape (right_command+space to escape)",
       "manipulators": [
         {
