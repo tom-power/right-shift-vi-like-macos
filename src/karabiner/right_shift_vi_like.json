@@ -718,14 +718,14 @@
       ]
     },
     {
-      "description": "Right command and return to spotlight (right_command+return to left_command+spacebar)",
+      "description": "Left command and return to spotlight (left_command+return to left_command+spacebar)",
       "manipulators": [
         {
           "from": {
             "key_code": "return_or_enter",
             "modifiers": {
               "mandatory": [
-                "right_command"
+                "left_command"
               ]
             }
           },
