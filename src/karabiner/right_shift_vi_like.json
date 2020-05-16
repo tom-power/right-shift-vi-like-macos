@@ -23,52 +23,6 @@
       ]
     },
     {
-      "description": "Right fn/end (right_shift+e to cmd+right)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": ["right_shift"],
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "fn"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Right option (right_shift+w to option+right)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [ "right_shift" ],
-              "optional": [ "any" ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
       "description": "Down (right_shift+j to down)",
       "manipulators": [
         {
@@ -109,29 +63,6 @@
       ]
     },
     {
-      "description": "Left option (right_shift+b to option+left)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [ "right_shift" ],
-              "optional": [ "any" ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
       "description": "Up (right_shift+k to up)",
       "manipulators": [
         {
@@ -152,19 +83,91 @@
       ]
     },
     {
-      "description": "Left command and space to escape (left_command+space to escape)",
+      "description": "End (right_shift+e to fn+right)",
       "manipulators": [
         {
           "from": {
-            "key_code": "spacebar",
+            "key_code": "e",
             "modifiers": {
-              "mandatory": [ "left_command" ],
+              "mandatory": ["right_shift"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Home (right_shift+a to fn+left)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": ["right_shift"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "fn"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Word forward (right_shift+w to option+right)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [ "right_shift" ],
               "optional": [ "any" ]
             }
           },
           "to": [
             {
-              "key_code": "escape"
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Word back (right_shift+b to option+left)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [ "right_shift" ],
+              "optional": [ "any" ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_option"
+              ]
             }
           ],
           "type": "basic"
@@ -404,23 +407,19 @@
       ]
     },
     {
-      "description": "Search focus (right_shift+g to l+command)",
+      "description": "Escape (left_command+space to escape)",
       "manipulators": [
         {
           "from": {
-            "key_code": "g",
+            "key_code": "spacebar",
             "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
+              "mandatory": [ "left_command" ],
+              "optional": [ "any" ]
             }
           },
           "to": [
             {
-              "key_code": "l",
-              "modifiers": [
-                "right_command"
-              ]
+              "key_code": "escape"
             }
           ],
           "type": "basic"
@@ -557,6 +556,161 @@
       ]
     },
     {
+      "description": "Thin arrow (right_shift+- to ->)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "hyphen"
+            },
+            {
+              "key_code": "period",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Fat arrow (right_shift+= to =>)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "equal_sign",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "equal_sign"
+            },
+            {
+              "key_code": "period",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Go back (right_shift+cmd+option+h to cmd+[)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_command",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Go forward (right_shift+cmd+option+l to cmd+])",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "right_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Go to tab to left (right_shift+u to cmd+shift+[)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Go to tab to right (right_shift+o to cmd+shift+])",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "close_bracket",
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Single quote (right_shift+q to single quote)",
       "manipulators": [
         {
@@ -664,185 +818,6 @@
       ]
     },
     {
-      "description": "Thin arrow (right_shift+- to ->)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "hyphen",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "hyphen"
-            },
-            {
-              "key_code": "period",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Fat arrow (right_shift+= to =>)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "equal_sign",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "equal_sign"
-            },
-            {
-              "key_code": "period",
-              "modifiers": [
-                "left_shift"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Left command and return to spotlight (left_command+return to left_command+spacebar)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "return_or_enter",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "spacebar",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "IntelliJ go back (right_shift+cmd+option+h to cmd+[)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "right_shift",
-                "left_command",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "IntelliJ go forward (right_shift+cmd+option+l to cmd+])",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "right_shift",
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "close_bracket",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "IntelliJ go to tab to left (right_shift+u to cmd+shift+[)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "left_command",
-                "left_shift"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "IntelliJ go to tab to right (right_shift+o to cmd+shift+])",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "right_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "close_bracket",
-              "modifiers": [
-                "left_command",
-                "left_shift"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
       "description": "Parentheses closed (right_shift+left_shift+9 to closed paranetheses)",
       "manipulators": [
         {
@@ -938,6 +913,54 @@
             },
             {
               "key_code": "left_arrow"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Search focus (right_shift+g to l+command)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l",
+              "modifiers": [
+                "right_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Spotlight (left_command+return to left_command+spacebar)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ],
           "type": "basic"
